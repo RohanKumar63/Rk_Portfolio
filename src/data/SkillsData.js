@@ -1,26 +1,15 @@
 import { DiJavascript1 } from "react-icons/di";
 import { FaCss3Alt, FaFigma, FaGithub, FaHtml5, FaReact } from "react-icons/fa";
-import { RiVuejsLine } from "react-icons/ri";
 import { 
-  SiAdobephotoshop, 
-  SiFirebase, 
-  SiFramer, 
-  SiNextdotjs, 
-  SiRedux, 
-  SiStyledcomponents, 
   SiTailwindcss, 
-  SiTypescript, 
   SiMongodb, 
   SiMysql, 
-  SiApachespark, 
   SiLinux, 
   SiNodedotjs, 
   SiExpress, 
-  SiPostgresql,
   SiCplusplus, 
   SiPython   
 } from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
 
 export const SkillsData = [
   { name: "HTML", icon: <FaHtml5 /> },
