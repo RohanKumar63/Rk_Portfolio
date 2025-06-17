@@ -23,7 +23,6 @@ const WorkCard = ({ w, tabId }) => {
 											<FiGithub />
 										</Link>
 									)}
-
 									<a
 										href={w.app}
 										download={w.title}

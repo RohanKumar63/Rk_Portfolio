@@ -3,6 +3,7 @@ import "../styles/Services.css"
 import {IoColorWandOutline} from "react-icons/io5"
 import {BiCodeAlt} from "react-icons/bi"
 import { motion } from "framer-motion";
+import { FaLaptopCode } from "react-icons/fa";
 
 const Services = () => {
 
@@ -24,8 +25,13 @@ const Services = () => {
                 <motion.div className="services-box" whileInView={fade} initial={{opacity: 0}}>
                     <div className="services-card">
                         <BiCodeAlt className='services-icon' />
-                        <p className='services-title'>Web Development</p>
+                        <p className='services-title'>Frontend Development</p>
                         <p className='services-desc'>I use various web technologies to develop attractive,creative, interactive, responsive and functional website layouts. </p>
+                    </div>
+                    <div className="services-card">
+                        <FaLaptopCode className='services-icon' />
+                        <p className='services-title'>Backend Development</p>
+                        <p className='services-desc'>I use various backend technologies to develop robust, scalable, secure, efficient, and reliable server-side solutions.</p>
                     </div>
                     <div className="services-card">
                         <IoColorWandOutline className='services-icon' />

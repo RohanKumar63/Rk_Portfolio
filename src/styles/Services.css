@@ -7,7 +7,7 @@
 
 .services-card {
     width: fit-content;
-    max-width: 300px;
+    max-width: 320px;
     margin: 0 auto;
     cursor: pointer;
     display: flex;
