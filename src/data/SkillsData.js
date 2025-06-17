@@ -1,5 +1,5 @@
 import { DiJavascript1 } from "react-icons/di";
-import { FaCss3Alt, FaFigma, FaGithub, FaHtml5, FaReact, FaSass } from "react-icons/fa";
+import { FaCss3Alt, FaFigma, FaGithub, FaHtml5, FaReact } from "react-icons/fa";
 import { RiVuejsLine } from "react-icons/ri";
 import { 
   SiAdobephotoshop, 
