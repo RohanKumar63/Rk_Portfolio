@@ -1,29 +1,47 @@
-import { FaGithub } from "react-icons/fa";
+// Add FiExternalLink for the live preview button
+import { FiExternalLink } from "react-icons/fi"; 
+// ... other imports
+import { 
+  SiTailwindcss, 
+  SiMongodb, 
+  SiNodedotjs, 
+  SiExpress,
+   SiPostman,
+   
+} from "react-icons/si";
+import { DiJavascript1 } from "react-icons/di";
+import { FaGithub, FaReact } from "react-icons/fa";
+
+// image imports
+import project1 from "../images/project1.png";
+import project2 from "../images/Project2.png";
+import project3 from "../images/backend-image.png";
 
 export const WorkData = [
-	{
-	  title: "SecurePass",
-	  description: " Developed a secure, full-stack password manager using Node.js, Express.js, MongoDB, and EJS. Focused on encrypted data storage, advanced user authentication, and a responsive interface. ",
-	  image: "/images/project-one.jpg", // Update with your image path
-	  link: "https://github.com/RohanKumar63/SecurePass",
-	  giticon:<FaGithub />,
-
-	},
-	{
-	  title: "Project Two",
-	  description: "A brief description of project two. It solves important problems.",
-	  image: "/images/project-two.jpg",
-	  link: "https://github.com/RohanKumar63/",
-	  giticon:<FaGithub />,
-      },
-	{
-		title: "Project Two",
-		description: "A brief description of project two. It solves important problems.",
-		image: "/images/project-two.jpg",
-		link: "https://example.com/project-two",
-		giticon:<FaGithub />,
-	  },
-	// Add more work items as needed
-  ];
+  {
+    title: "SecurePass",
+    tech: [ <DiJavascript1 />, <FaReact />],
+    image: project1,
+    githubLink: "https://github.com/RohanKumar63/SecurePass",
+    liveLink: "", 
+    giticon: <FaGithub />,
+    linkIcon: <FiExternalLink /> // Add the external link icon
+  },
+   {
+    title: "Doc Mate",
+    tech: [ <DiJavascript1 />, <SiExpress />, <SiMongodb />, <SiNodedotjs />],
+    image: project2, 
+	liveLink: "", 
+    githubLink: "https://github.com/RohanKumar63/SecurePass",
+    giticon: <FaGithub />,
+  },
+   {
+    title: "SecurePass",
+    tech: [ <DiJavascript1 />, <SiExpress />, <SiMongodb />, <SiNodedotjs />, <SiPostman />],
+    image: project3, 
+	liveLink: "", 
+    githubLink: "https://github.com/RohanKumar63/",
+    giticon: <FaGithub />,
+  },
   
-
+];

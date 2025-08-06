@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../styles/Works.css";
-import { WorkData } from "../data/WorkData"; // Create a similar data file for your work projects
+import { WorkData } from "../data/WorkData"; 
 
 const Work = () => {
   const workEffect = {
@@ -23,7 +23,7 @@ const Work = () => {
           <p className="heading-sub-text">My Projects & Experience</p>
           <p className="heading-text">Work</p>
         </motion.div>
-		
+    
         <motion.div
           whileInView={workEffect}
           initial={{ y: "-80px", opacity: 0 }}
@@ -35,17 +35,30 @@ const Work = () => {
                 <img src={item.image} alt={item.title} />
               </div>
               <div className="work-content">
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-                {item.link && (
-                  <a
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-				{item.giticon}
-                  </a>
-                )}
+                <h3 className="project-title">{item.title}</h3>
+                <p className="tech-stack-label">Tech Stack:</p>
+                <div className="tech-stack-icons">
+                  {item.tech.map((icon, i) => (
+                    <div key={i} className="icon-wrapper">
+                      {icon}
+                    </div>
+                  ))}
+                </div>
+                 <div className="project-links">
+      
+          {item.githubLink && (
+            <a href={item.githubLink} target="_blank" rel="noopener noreferrer" aria-label="GitHub Link">
+              {item.giticon}
+            </a>
+          )}
+
+          {item.liveLink && (
+            <a href={item.liveLink} target="_blank" rel="noopener noreferrer" aria-label="Live Preview Link">
+              {item.linkIcon}
+            </a>
+          )}
+        </div>
+
               </div>
             </div>
           ))}
