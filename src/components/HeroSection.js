@@ -5,7 +5,7 @@ import { BiDownload } from "react-icons/bi";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
-import CV from "../data/Rohan_Kumar_Resume.pdf";
+import resume from "../data/Rohan_Kumar_Resume.pdf";
 
 const HeroSection = ({ nav, handleNav }) => {
 	const scrollToTop = () => {
@@ -34,7 +34,7 @@ const HeroSection = ({ nav, handleNav }) => {
 			opacity: 1,
 			y: 0,
 			transition: {
-				duration: 1.4,
+				duration: 0.5,
 			},
 		},
 	};
@@ -48,7 +48,7 @@ const HeroSection = ({ nav, handleNav }) => {
 			opacity: 1,
 			x: 0,
 			transition: {
-				duration: 1.4,
+				duration: 1,
 			},
 		},
 	};
@@ -104,8 +104,8 @@ const HeroSection = ({ nav, handleNav }) => {
 				variants={contactVariants}
 				initial='hidden'
 				whileInView='visible'>
-				<a href={CV} download='Rohan Kumar CV' className='hero-contact'>
-					Download CV <BiDownload className='cv-icon' />
+				<a href={resume} download='Rohan Kumar Resume' className='hero-contact'>
+					Download Resume <BiDownload className='cv-icon' />
 				</a>
 			</motion.span>
 		</div>
