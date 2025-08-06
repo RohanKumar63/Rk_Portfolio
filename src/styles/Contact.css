@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 2rem;
+	align-items: center;
 }
 
 .contact-heading {
@@ -35,7 +36,39 @@
 	color: var(--nav-blue);
 }
 
-/* Form */
+/* fotter link */
+.fotter-nav-links {
+	font-size: 2rem;
+	margin-left: 20rem ;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.fotter-nav-links li,
+.mid-details li {
+	list-style: none;
+}
+
+.fotter-nav-link {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--white);
+	margin: 0 0.3rem;
+	padding: 0.7rem;
+	background-color: var(--nav-deep-blue);
+	border-radius: 50%;
+	transition: all 0.3s ease-in-out;
+}
+
+.fotter-nav-link:hover {
+	background-color: var(--nav-blue);
+}
+/* Form
 .right-box {
 	width: 90%;
 	margin: 0 auto;
@@ -114,7 +147,7 @@ textarea:-webkit-autofill:focus {
 
 .Toastify__toast-body {
     font-size: 12px;
-}
+} */
 
 
 

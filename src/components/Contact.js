@@ -1,8 +1,12 @@
 import { motion } from "framer-motion";
-import React, { useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+// import React, { useState } from "react";
+import { ToastContainer } from "react-toastify";
+// import {toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/Contact.css";
+import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { BiEnvelope } from "react-icons/bi";
+import { BsGithub } from "react-icons/bs";
 
 const Contact = () => {
 	const fade = {
@@ -20,58 +24,58 @@ const Contact = () => {
 		},
 	};
 
-	const [formData, setFormData] = useState({
-		name: "",
-		email: "",
-		message: "",
-	});
-	const [isSubmitting, setIsSubmitting] = useState(false);
+	// const [formData, setFormData] = useState({
+	// 	name: "",
+	// 	email: "",
+	// 	message: "",
+	// });
+	// const [isSubmitting, setIsSubmitting] = useState(false);
 
-	const handleChange = (e) => {
-		const { name, value } = e.target;
-		setFormData((prev) => ({
-			...prev,
-			[name]: value,
-		}));
-	};
+	// const handleChange = (e) => {
+	// 	const { name, value } = e.target;
+	// 	setFormData((prev) => ({
+	// 		...prev,
+	// 		[name]: value,
+	// 	}));
+	// };
 
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		setIsSubmitting(true);
+	// const handleSubmit = (e) => {
+	// 	e.preventDefault();
+	// 	setIsSubmitting(true);
 
-		const form = e.target;
-		const formDataToSubmit = new FormData(form);
+	// 	const form = e.target;
+	// 	const formDataToSubmit = new FormData(form);
 
-		fetch("/", {
-			method: "POST",
-			headers: { "Content-Type": "application/x-www-form-urlencoded" },
-			body: new URLSearchParams(formDataToSubmit).toString(),
-		})
-			.then(() => {
-				toast.success("Thanks for your message! I'll get back to you soon.", {
-					position: "top-left",
-					autoClose: 2000,
-					hideProgressBar: false,
-					closeOnClick: true,
-					pauseOnHover: true,
-					draggable: true,
-				});
-				setFormData({ name: "", email: "", message: "" });
-				setIsSubmitting(false);
-			})
-			.catch((error) => {
-				toast.error("Submission failed. Please try again.", {
-					position: "top-left",
-					autoClose: 2000,
-					hideProgressBar: false,
-					closeOnClick: true,
-					pauseOnHover: true,
-					draggable: true,
-				});
-				console.error(error);
-				setIsSubmitting(false);
-			});
-	};
+	// 	fetch("/", {
+	// 		method: "POST",
+	// 		headers: { "Content-Type": "application/x-www-form-urlencoded" },
+	// 		body: new URLSearchParams(formDataToSubmit).toString(),
+	// 	})
+	// 		.then(() => {
+	// 			toast.success("Thanks for your message! I'll get back to you soon.", {
+	// 				position: "top-left",
+	// 				autoClose: 2000,
+	// 				hideProgressBar: false,
+	// 				closeOnClick: true,
+	// 				pauseOnHover: true,
+	// 				draggable: true,
+	// 			});
+	// 			setFormData({ name: "", email: "", message: "" });
+	// 			setIsSubmitting(false);
+	// 		})
+	// 		.catch((error) => {
+	// 			toast.error("Submission failed. Please try again.", {
+	// 				position: "top-left",
+	// 				autoClose: 2000,
+	// 				hideProgressBar: false,
+	// 				closeOnClick: true,
+	// 				pauseOnHover: true,
+	// 				draggable: true,
+	// 			});
+	// 			console.error(error);
+	// 			setIsSubmitting(false);
+	// 		});
+	// };
 
 	return (
 		<>
@@ -101,7 +105,7 @@ const Contact = () => {
 								<p>Say Hello</p>
 								<a
 									className='hello-links'
-									href='rohankumar941536@gmail.com'
+									href='mailto:rohankumar941536@gmail.com'
 									target='_blank'
 									rel='noreferrer'>
 							        rohankumar941536@gmail.com
@@ -112,7 +116,7 @@ const Contact = () => {
 							className='right-box'
 							initial={{ opacity: 0, y: "50px" }}
 							whileInView={verticalLeft}>
-							<form
+							{/* <form
 								name='contact-form'
 								method='POST'
 								data-netlify='true'
@@ -172,7 +176,22 @@ const Contact = () => {
 										{isSubmitting ? "Sending..." : "Send Message"}
 									</button>
 								</div>
-							</form>
+							</form> */}
+							<ul className='fotter-nav-links'>
+								  <li >
+									<a href="https://twitter.com/your-profile" target='_blank' rel="noreferrer" className='nav-link'><FaTwitter /></a>
+								  </li>
+								  <li >
+									<a href="https://www.linkedin.com/in/rohan-kumar-372332270/" target='_blank' rel="noreferrer" className='nav-link'><FaLinkedin /></a>
+								  </li>
+								  <li>
+									<a href="https://github.com/RohanKumar63" target='_blank' rel="noreferrer" className='nav-link'><BsGithub /></a>
+								  </li>
+								  <li >
+									<a href="mailto:rohankumar941536@gmail.com" target='_blank' rel="noreferrer" className='nav-link'><BiEnvelope /></a>
+								  </li>
+								</ul>
+
 						</motion.div>
 					</div>
 				</div>
