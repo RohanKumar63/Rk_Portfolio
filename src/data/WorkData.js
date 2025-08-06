@@ -2,12 +2,10 @@
 import { FiExternalLink } from "react-icons/fi"; 
 // ... other imports
 import { 
-  SiTailwindcss, 
   SiMongodb, 
   SiNodedotjs, 
   SiExpress,
    SiPostman,
-   
 } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 import { FaGithub, FaReact } from "react-icons/fa";
