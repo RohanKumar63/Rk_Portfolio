@@ -177,4 +177,10 @@ textarea:-webkit-autofill:focus {
 	.right-box {
 		font-size: 70%;
 	}
+	.fotter-nav-links {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
 }
