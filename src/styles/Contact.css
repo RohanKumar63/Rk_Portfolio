@@ -39,10 +39,10 @@
 /* fotter link */
 .fotter-nav-links {
 	font-size: 2rem;
-	margin-left: 20rem ;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: flex-end;
 }
 
 .fotter-nav-links li,
