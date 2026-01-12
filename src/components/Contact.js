@@ -5,7 +5,7 @@ import { ToastContainer } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/Contact.css";
-import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { BiEnvelope } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 
