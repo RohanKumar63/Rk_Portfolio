@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 // import React, { useState } from "react";
 import { ToastContainer } from "react-toastify";
 // import {toast } from "react-toastify";
+
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/Contact.css";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
@@ -179,7 +180,7 @@ const Contact = () => {
 							</form> */}
 							<ul className='fotter-nav-links'>
 								  <li >
-									<a href="https://twitter.com/your-profile" target='_blank' rel="noreferrer" className='nav-link'><FaTwitter /></a>
+									<a href="" target='_blank' rel="noreferrer" className='nav-link'><FaTwitter /></a>
 								  </li>
 								  <li >
 									<a href="https://www.linkedin.com/in/rohan-kumar-372332270/" target='_blank' rel="noreferrer" className='nav-link'><FaLinkedin /></a>

@@ -21,7 +21,7 @@ const Work = () => {
           className="heading"
         >
           <p className="heading-sub-text">My Projects & Experience</p>
-          <p className="heading-text">Work</p>
+          <p className="heading-text">Freelancing Work</p>
         </motion.div>
     
         <motion.div
@@ -45,7 +45,7 @@ const Work = () => {
                   ))}
                 </div>
                  <div className="project-links">
-      
+    
           {item.githubLink && (
             <a href={item.githubLink} target="_blank" rel="noopener noreferrer" aria-label="GitHub Link">
               {item.giticon}
