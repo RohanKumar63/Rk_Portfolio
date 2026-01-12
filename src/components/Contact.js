@@ -180,9 +180,6 @@ const Contact = () => {
 							</form> */}
 							<ul className='fotter-nav-links'>
 								  <li >
-									<a href="" target='_blank' rel="noreferrer" className='nav-link'><FaTwitter /></a>
-								  </li>
-								  <li >
 									<a href="https://www.linkedin.com/in/rohan-kumar-372332270/" target='_blank' rel="noreferrer" className='nav-link'><FaLinkedin /></a>
 								  </li>
 								  <li>
